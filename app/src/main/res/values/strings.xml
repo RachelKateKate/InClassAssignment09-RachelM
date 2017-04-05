@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">InClassAssignment09-RachelM</string>
+    <string name="messages">messages</string>
+    <string name="log_out">Log Out</string>
+    <string name="send">Send</string>
+    <string name="enter_note_here">Enter Note Here</string>
 </resources>

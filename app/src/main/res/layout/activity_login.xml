@@ -4,38 +4,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="rachelmiller.inclassassignment09_rachelm.MainActivity">
+    tools:context="rachelmiller.inclassassignment09_rachelm.LoginActivity">
 
     <EditText
-        android:id="@+id/displayText"
-        android:layout_height="wrap_content"
+        android:id="@+id/edit_text_email"
         android:layout_width="match_parent"
-        android:text="@string/messages" />
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/input_text"
+        android:id="@+id/edit_text_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/enter_note_here" />
+        android:hint="Password"
+        android:inputType="textPassword" />
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/send"
-            android:onClick="send" />
+            android:onClick="login"
+            android:text="Log In" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:onClick="logOut"
-            android:text="@string/log_out" />
-
-    </RelativeLayout>
-
+            android:onClick="SignUp"
+            android:text="Sign Up" />
+    </LinearLayout>
 </LinearLayout>
+
+
+
